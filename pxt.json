@@ -14,7 +14,8 @@
         "coding_fun/lesson1/welcome.md",
         "coding_fun/no_coding.md",
         "main.ts",
-        "no_coding.md"
+        "no_coding.md",
+        "welcome.md"
     ],
     "targetVersions": {
         "target": "1.5.44",
