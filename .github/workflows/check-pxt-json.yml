@@ -2,7 +2,7 @@ name: Check pxt.json
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
