@@ -6,6 +6,10 @@
         "builder": "*"
     },
     "files": [
+        "main.blocks",
+        "main.ts",
+        "main.py",
+        "main.ts",
         "README.md",
         "coding_fun/lesson1/agent-move.md",
         "coding_fun/lesson1/agent-up.md",
@@ -13,7 +17,6 @@
         "coding_fun/lesson1/last-room.md",
         "coding_fun/lesson1/welcome.md",
         "coding_fun/no_coding.md",
-        "main.ts",
         "no_coding.md",
         "welcome.md"
     ],
