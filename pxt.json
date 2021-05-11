@@ -69,7 +69,7 @@
         "welcome.md"
     ],
     "targetVersions": {
-        "target": "1.5.44",
+        "target": "1.6.8",
         "targetId": "minecraft"
     },
     "supportedTargets": [
