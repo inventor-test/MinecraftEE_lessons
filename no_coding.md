@@ -3,7 +3,7 @@
 ### @explicitHints 1
 
 
-# No code is required for this activity. 
+# На цьому етапі кодувати не потрібно. 
 ## Step 1
 Для цієї діяльності код не потрібен. 
 
