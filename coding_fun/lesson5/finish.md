@@ -7,23 +7,23 @@
 
 # Вітаємо! Ви пройшли до кінця
 
-## Крок 1
+## Step 1
 Ура, ви пройшли цей урок! Можете використати всі блоки, які були на уроці, щоб потренуватися у програмуванні. Або потренуйтесь у майстерності будівництва.
 
 
 ```ghost
-player.onChat("family", function () {
-    agent.setItem(PLANKS_OAK, 64, 1)
-    agent.move(FORWARD, 1)
-    for (let index = 0; index < 10; index++) {
-        agent.place(FORWARD)
-        agent.move(UP, 1)
-    }
-    while (!(agent.detect(AgentDetection.Block, FORWARD))) {
-        agent.place(DOWN)
+player.onChat("foliage", function () {
+    for (let index = 0; index < 8; index++) {
+        agent.destroy(FORWARD)
         agent.move(FORWARD, 1)
-        agent.turn(LEFT_TURN)
+        for (let index = 0; index < 2; index++) {
+            agent.move(FORWARD, 1)
+            agent.turn(RIGHT_TURN)
+            while (!(agent.detect(AgentDetection.Block, FORWARD))) {
+                agent.place(DOWN)
+                agent.move(FORWARD, 1)
+            }
+        }
     }
 })
-
 ``` 
