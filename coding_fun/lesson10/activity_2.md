@@ -8,7 +8,7 @@
 # Surroundings 
 
 ## Step 1
-Під час **перевірки блоку знизу (While inspecting the block down)**, який **НЕ є спресованим льодом (packed ice)**, **якщо (if)** Агент **виявляє блок праворуч (detects the block right)**, йому потрібно **рухатися вперед (move forward)**. В іншому випадку (else) йому потрібно **рухатися праворуч (move right)**. У тому ж циклі, якщо Агент **перевіряє блок знизу (inspects the block down)** і він є **булижником (cobblestone)** **або** **гравієм (gravel)**, то йому потрібно **знищити знизу (destroy down)** і **зібрати все (collect all)**.
+Під час **перевірки блоку знизу (While inspecting the block down)**, який **НЕ є спресованим льодом (packed ice)**, **якщо (if)** Агент **виявляє блок праворуч (detects the block right)**, йому потрібно **рухатися вперед (move forward)**. В іншому випадку (else) йому потрібно **рухатися праворуч (move right)**. У тому ж циклі, якщо Агент **перевіряє блок знизу (inspects the block down)** і він є **кругляком (cobblestone)** **або** **гравієм (gravel)**, то йому потрібно **знищити знизу (destroy down)** і **зібрати все (collect all)**.
 
 
 ```template
