@@ -13,7 +13,7 @@
 #### ~ tutorialhint 
 Після знаходження дорогоцінного блоку агент має повернути або ліворуч, або праворуч, в залежності від блоку, а потім продовжити йти вперед. Щоб зробити код меншим, можна поєднати пару блоків логічним оператором OR.
 
-```
+```blocks
 player.onChat("1", function () {
         if (agent.inspect(AgentInspection.Block, DOWN) == IRON || agent.inspect(AgentInspection.Block, DOWN) == GOLD) {
 
