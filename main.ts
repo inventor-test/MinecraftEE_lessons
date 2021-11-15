@@ -1,1 +1,3 @@
-//leave empty
+player.onChat("run", function () {
+	
+})
