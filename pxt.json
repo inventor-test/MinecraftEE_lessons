@@ -1,17 +1,12 @@
 {
-    "name": "educationcontent",
-    "version": "8.0.2",
+    "name": "coding-fun-inventor",
+    "version": "0.0.0",
     "dependencies": {
         "core": "*",
         "builder": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
-        "main.py",
-        "main.ts",
         "README.md",
-
         "coding_fun/lesson1/agent-move.md",
         "coding_fun/lesson1/agent-up.md",
         "coding_fun/lesson1/agent.md",
@@ -73,7 +68,6 @@
         "coding_fun/lesson14/activity_1.md",
         "coding_fun/lesson14/activity_2.md",
         "coding_fun/lesson14/activity_3.md",   
-
         "coding_fun_en/lesson1/agent-move.md",
         "coding_fun_en/lesson1/agent-up.md",
         "coding_fun_en/lesson1/agent.md",
@@ -127,12 +121,12 @@
         "coding_fun_en/lesson10/activity_5.md",
         "coding_fun_en/lesson11/activity-1.md",
         "coding_fun_en/lesson12/space.md",
-     
         "no_coding.md",
         "welcome.md"
     ],
+    "public": true,
     "targetVersions": {
-        "target": "1.6.8",
+        "target": "1.5.64",
         "targetId": "minecraft"
     },
     "supportedTargets": [
