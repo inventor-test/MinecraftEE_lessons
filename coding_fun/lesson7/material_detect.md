@@ -1,3 +1,9 @@
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
+
 ### @codeStart players set @s makecode 0
 ### @codeStop players set @s makecode 1
 
@@ -8,7 +14,7 @@
 # Detecting your first material
 
 ## Step 1
-Агенту потрібно **знищити (destroy)**, а потім **зібрати (collect)** блок **золота**.
+Агенту <r>потрібно</r> **знищити (destroy)**, а потім **зібрати (collect)** <span style="color:blue">блок</span> **золота**.
 
 ```template
 player.onChat("material", function () {
