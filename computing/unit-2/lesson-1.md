@@ -19,7 +19,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 2
-Зайдіть у випадаюче меню, щоб змінити тип блоку з **Grass** на **Gray Concrete**.
+Клацніть по випадаючому меню, щоб змінити тип блоку з **Grass** на **Gray Concrete**.
 ### ~ tutorialhint
 
 ``` blocks
