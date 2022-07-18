@@ -1,23 +1,23 @@
 ### @explicitHints 1
 
-# Lesson 3: Code a Row of Houses
+# Завдання 3: Програмуємо ряд будинків
 
-## Build Area @unplugged
-We'll be building a house in this building zone in front of the Agency building. Here is an example building. It can be anything!
+## Зона будівництва @unplugged
+В цьому завданні будемо майструвати будинок у будівельній зоні перед будівлею агентства. Ось приклад будівлі. Однак це може бути що завгодно!
 
 ![Build area image](https://raw.githubusercontent.com/Mojang/EducationContent/master/computing/unit-2/build_area.png)
 
-## Step 1
-Manually build a house to your design specification. Do this in the designated construction zone, marked by yellow and black wool.
+## Крок 1
+Власноруч побудуйте будинок за вашим бажанням. Він має бути розташований у спеціальній зоні будівництва, позначеній жовто-чорною рамкою.
 
-Press the back arrow to the left to view the example and location of the build area again.
+Натисніть стрілку назад, щоб повернутись до попереднього кроку та знову переглянути приклад і де знаходиться ця зона.
 
-## Step 2
-Rename the **run** element of the ``||Player:on chat command||`` block to **clone_here**. Drag a ``||Blocks:clone from||`` code block to your ``||Player:on chat command||``. 
+## Крок 2
+Перейменуйте назву **run** у блоці ``||Player:on chat command||`` на **clone_here**. Перетягніть блок ``||Blocks:clone from||`` всередину ``||Player:on chat command||``. 
 
-This code block allows you to clone a designated area of a Minecraft world and place it elsewhere. It's like using copy and paste in other software. You copy an area and then paste it somewhere else in your world.
+Цей блок дозволяє скопіювати певну ділянку світу Minecraft та розмістити її в іншому місці. Це як копіювання та вставка в інших програмах. Ви копіюєте область, а потім вставляєте її десь у своєму світі.
 
-When you clone, the orientation or direction of the building will be the same as the copied building. So, if the building you copy is facing east, the cloned building will also face east.
+При клонуванні орієнтація та напрямок будівлі будуть такими ж, як і у скопійованої. Отже, якщо побудувати будинок з вікнами на схід, у клонованій будівлі вони будуть повернуті так само.
 
 #### ~ tutorialhint
 ``` blocks
@@ -32,17 +32,17 @@ player.onChat("clone_here.", function () {
 })
 ```
 
-## Step 3
-The first two sets of coordinates represent a three-dimensional box with the ``||Blocks:clone from||`` coordinates as one corner and the ``||Blocks:to||`` coordinates as the opposite corner, capturing everything in between like the box in the picture.
+## Крок 3
+Перші дві комірки з координатами у блоці ``||Blocks:clone||`` утворюють тривимірну скриньку, один куточок якої записується в поле ``||Blocks:from||``, а протилежний кут в поле ``||Blocks:to||``. Під копіювання потрапляє все між цими двома кутками, як на малюнку.
 
-The third set of coordinates for the ``||Blocks:into||`` represents the coordinates you want the cloned structure to paste into. 
+Третій набір координат, в полі ``||Blocks:into||`` - це координата, в яку ви хочете вставити клоновану область. 
 
-Let's try it! Find the bottom corner of your model house. In the provided image, we have marked this with Yellow Wool. 
+Спробуємо! Знайдіть нижній кут моделі свого будинку. На зображенні ми позначали його жовтою вовною.
 
-Now create a top and opposite corner, creating an invisible box around the structure. We have done the same with **Yellow Wool** in the image provide. 
+Тепер знайдіть ***протилежний верхній кут***, щоб навколо конструкції можна було уявити невидимий ящик. Ми зробили те ж саме з **жовтою вовною** на зображенні.
 
-## Step 4
-Visit the ``||Positions:POSITIONS||`` toolbox drawer and replace the first two coordinates with ``||Positions:world||`` coordinates. We know from our **Yellow Wool** that each of these coordinates are absolute. 
+## Крок 4
+Зайдіть в розділ ``||Positions:POSITIONS||`` та замініть перші два поля координат на абсолютні, тобто ``||Positions:world [0] [0] [0]||``. Дізнатись, які саме абсолютні координати нам потрібні, ми зможемо ставши у наші куточки з **жовтою вовною**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -57,10 +57,10 @@ player.onChat("clone_here.", function () {
 })
 ```
 
-## Step 5
-Change the first set of coordinates to the ``||Blocks:clone from||`` set in the code block, and the second set of coordinates to the ``||Blocks:to||`` set below them. Remember, the image below has example coordinates. 
+## Крок 5
+Змініть перший набір координат у блоці ``||Blocks:clone from||`` на координати одного куточку, а координати протилежного кутка запишіть в поле ``||Blocks:to||``. *Увага! у прикладі з підказки записані приклади координат, ви маєте записати свої.*
 
-The last coordinates are relative to your player, so your player will become the marker for the place you want to clone the house. You'll need to move your player each time you want to clone another house. 
+Останнє поле координат є відносно вашого гравця, тому саме гравець стане точкою, куди ви хочете клонувати будинок. Так його і залишимо. Вам потрібно буде рухатись в потрібну точку кожного разу, як захочете вставити до світу ще один будинок.
 
 #### ~ tutorialhint
 ``` blocks
@@ -76,11 +76,11 @@ player.onChat("clone_here.", function () {
 ```
 
 
-## Step 6
-Test the code. In Minecraft, move your player to the sky to test your code, paying attention to where the building clones into. 
+## Крок 6
+Перевірте свій код! У Minecraft спочатку підлетіть повище до неба, щоб безпечно перевірити програму, та зверніть увагу - як саме вставляється будівля.
 
-## Step 7
-Build your row of houses. Stand where you would like to place your first house in your final build and type the command **clone_here**. You will note a house appears. 
+## Крок 7
+Тепер можете побудувати цілу мережу своїх будинків. Встаньте там, де ви хотіли б розмістити свій перший будинок, (перевірте, чи правильно ви стали!) та введіть команду **clone_here**. Має з'явитись новенький будинок.
 
-Once you're done creating the row in the city, you can now remove your model house.  
+Можете змінити модель будинку, що знаходиться в зоні побудови, але не забудьте перевірити правильність координат у блоці ``||Blocks:clone from||``! Після закінчення роботи цю модель можна знести.
 
