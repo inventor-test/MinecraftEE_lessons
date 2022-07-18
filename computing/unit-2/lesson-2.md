@@ -39,7 +39,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Крок 4
-Return to the ``||Agent:AGENT||`` toolbox drawer and drag the ``||Agent:agent move [forward]||``, this time placing it inside your ``||Loops:repeat [4] times||`` code set. 
+Поверніться в розділ ``||Agent:AGENT||`` та витягніть блок ``||Agent:agent move [forward]||``, тепер поставте його всередину циклу ``||Loops:repeat [4] times||``. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -53,7 +53,7 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Крок 5
-Change the number in the ``||Agent:agent move [forward]||`` code block to **5**. Drag the ``||Agent:agent turn [left]||``, this time placing it inside your ``||Loops:repeat [4] times||`` code set. You can change the direction, depending on what and where you are building. For this example, we will leave it to **left**. 
+Змініть у блоці ``||Agent:agent move [forward]||`` кількість рухів до **5**. Витягніть блок повороту ``||Agent:agent turn [left]||`` та поставте його всередину циклу ``||Loops:repeat [4] times||``. Ви можете змінити напрямок повороту залежно від того, що і де будуєте. Для цього прикладу ми залишимо його як ліворуч **(left)**. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -68,10 +68,10 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Крок 6
-Test the code, it's going to build four walls and leave our Agent near the start again. 
+Давайте перевіримо код. Наш агент має збудувати чотири стіни і повернутись на початок.
 
 ## Крок 7
-Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent move [forward]||``, then change it to **up**. Though place this one outside of and after the ``||Agent:repeat [4] times||`` code block as a new and separate action. This will move your Agent up one block and fill the block below as it does.
+Зайдіть в розділ ``||Agent:AGENT||`` та додайте ще один блок ``||Agent:agent move [forward]||``, але змініть напрямок на **up** (вгору). Але цей блок вже поставте за межами циклу ``||Agent:repeat [4] times||``, тобто після нього знизу, як окрему дію. Цей блок перемістить агента вгору на один блок, щоб мати змогу далі ставити блоки.
 
 ### ~ tutorialhint
 ``` blocks
@@ -87,7 +87,7 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Крок 8
-Add another ``||Agent:agent [place on move]||``, and leave this one set to **false**. Because we don't want our Agent to build this time as it moves. 
+Додайте ще один блок ``||Agent:agent [place on move]||``, але тут виберіть значення **false**. Адже тепер ми не хочемо, щоб наш агент будував, поки рухається. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -105,7 +105,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Крок 9
-Add another ``||Agent:agent move [forward]||``, then change it to **right**. This will put your Agent back at the beginning and ready to start the second layer of walls. 
+Витягніть ще один блок ``||Agent:agent move [forward]||``, та змініть напрямок на **right** (праворуч). Це поверне агента на стартову позицію, щоб він був готовий розпочати наступний шар стін.
 
 ### ~ tutorialhint
 ``` blocks
@@ -123,14 +123,14 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Крок 10
-Now, we need to repeat this process for the four layers of wall. This will require another loop. 
-Return to your ``||Loops:LOOPS||`` drawer and bring another ``||Loops:repeat [4] times||`` to your coding Workspace, only this time, we want to repeat the walls building Крокs. 
+Тепер нам потрібно повторити весь цей процес для чотирьох шарів стін. Для цього стане в нагоді ще один цикл. 
+Заходьте в розділ ``||Loops:LOOPS||`` та витягніть ще один цикл ``||Loops:repeat [4] times||``, але цього разу нам потрібно повторити ВСЮ процедуру побудови стін, тобто повторюватись має вся програма. 
 
 ## Крок 11
-Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent [place on move]||``, and set it to **true**. Test your code. 
+Поверніться до розділу ``||Agent:AGENT||`` та додайте блок ``||Agent:agent [place on move]||``, змініть значення на **true**. Можете перевірити код. 
 
 ## Крок 12
-Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent set active slot||``, and set it to **2**. Use another loop to make the agent move forward 5 blocks and then move left. Then move the agent back 5 blocks and move left again. This should be repeated 3 times to make the roof using **Stone Slabs**.
+Зайдіть в розділ ``||Agent:AGENT||`` та додайте блок ``||Agent:agent set active slot||``, замініть значення на **2**. Використайте ще один цикл **repeat**, в якому агент має пройти вперед на 5 блоків, а потім на 1 блок ліворуч, в тому ж циклі потім пройти 5 блоків назад і знову 1 блок ліворуч. Ця дія має повторитись 3 рази, щоб в нас вийшов дах. Блоками для даху можна обрати **Stone Slabs** (кам'яні плити).
 
 ### ~ tutorialhint
 
@@ -159,7 +159,7 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Крок 13
-Now it is time to build a window and a door. Add another ``||Agent:agent [place on move]||`` and leave it set to **false**. Then add another ``||Agent:agent move [forward]||``, and set it to **down** and **3**. Your Agent will move down three spaces to the level that a window might be placed so it won't place any roof tiles. 
+Тепер настав час додати вікно та двері. Додайте ще один блок ``||Agent:agent [place on move]||``, залиште його значення як **false**. Додайте блок ``||Agent:agent move [forward]||``, але напрямок виберіть **down** (вниз), а кількість **3**. Тепер ваш агент переміститься вниз на три блоки, де розміститься вікно, і не буде ставити блоки даху.
 
 ### ~ tutorialhint
 ``` blocks
@@ -190,7 +190,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Крок 14
-Add another ``||Agent:agent move [forward]||``, and set it to ``||Agent:forward||`` and **1**.
+Додайте ще один блок ``||Agent:agent move [forward]||``, напрямок має бути ``||Agent:forward||``, а кількість кроків **1**.
 
 ### ~ tutorialhint
 ``` blocks
@@ -222,12 +222,12 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Крок 15
-Add another ``||Agent:set active slot||``, and set it to **3**. This will select your Agent's third Inventory slot and make **Glass Panes** your next building material. 
+Додамо ще один блок ``||Agent:set active slot||``, а значення встановимо **3**. Цим зробимо активним третій слот інвентаря агента, отже будівельним матеріалом стануть **скляні панелі**. 
 
-Add an ``||Agent:agent destroy [forward]||`` block. Add it below the last block and change its value to **right**. This will make your Agent remove the block immediately to the right making a hole in the wall, ready for a window. 
+Додайте блок ``||Agent:agent destroy [forward]||``. Вставте його нижче останнього блоку і змініть значення на **right** (праворуч). Таким чином цим кроком агент знищить блок праворуч від себе, звільняючи місце під вікно.
 
 ## Крок 16
-Now select the new code block, ``||Agent:agent place [forward]||`` and use the drop-down menu to change it to **right**. This will code your Agent to place a **Glass Pane** in the gap left after destroying the wall block. 
+Тепер поставте наступним новий блок ``||Agent:agent place [forward]||``, у випадаючому меню змініть значення на **right** (праворуч). В цій частині програми агент розмістить **Glass Pane** (скляну панель) прямо у отворі, що утворився після знищення стіни. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -262,10 +262,10 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Крок 17
-Add another ``||Agent:agent move [forward]||`` code block. Leave it set to **forward** and change the numbering to **2**.
+Додайте ще один блок ``||Agent:agent move [forward]||``. Залиште значення **forward** (вперед), але цифру замініть на **2**.
 
 ## Крок 18
-Because we are placing a door, we will need to destroy two blocks high in the wall. Start by destroying this one by placing an ``||Agent:agent destroy [forward]||`` code block and setting it to **right**. 
+Оскільки нам потрібно додати двері, потрібно буде пробити в стіні два блоки в висоту. Перший блок можемо зламати одразу, розмістивши ``||Agent:agent destroy [forward]||`` та змінивши значення на **right** (праворуч). 
 
 ### ~ tutorialhint
 ``` blocks
@@ -301,7 +301,7 @@ player.onChat("build_a_structure.", function () {
 
 ## Крок 19
 
-Add another ``||Agent:agent move [forward]||`` code block. Change it to **down**. This will place your Agent right where we want to place a door. So, we need to set the right active inventory slot and then place a door. 
+Додайте ще один блок ``||Agent:agent move [forward]||``. Значення змініть на **down** (вниз), зробити агент має 1 крок. Тоді він опиниться прямо там, де нам потрібно розмістити двері. Отже, нам потрібно розбити блок, встановити правильний активний слот та розмістити двері. 
 
 ### ~ tutorialhint
 ``` blocks 
@@ -337,9 +337,9 @@ player.onChat("build_a_structure.", function () {
 ```
 
 ## Крок 20
-Add another ``||Agent:agent destroy [forward]||`` code block. Change it to **right**.
+Додамо ще один блок ``||Agent:agent destroy [forward]||``, значення змінимо на **right**.
 
-Return to the ``||Agent:AGENT||`` drawer and add another ``||Agent:select active slot||`` code block. Change it to **4**. This will select your Agent's fourth Inventory slot, the **Acacia Door**. 
+Зазирнемо у розділ ``||Agent:AGENT||`` та витягнемо блок ``||Agent:select active slot||``. Змініть значення на **4**. Тепер активним буде 4 слот інвентаря агента, в якому лежить **Acacia Door** (акацієві двері). 
 
 ### ~ tutorialhint
 ``` blocks
@@ -379,7 +379,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Крок 21
-Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent place [forward]||`` code block and change it to **right**. This will place your door and complete your building. Test your code! 
+Повернемось до розділу ``||Agent:AGENT||`` та поставимо в кінець блок ``||Agent:agent place [forward]||``, але змінимо значення на **right**. Цей блок поставить двері праворуч від агента та завершить наш будинок. Гайда перевіряти код! 
 
 ### ~ tutorialhint
 ``` blocks
