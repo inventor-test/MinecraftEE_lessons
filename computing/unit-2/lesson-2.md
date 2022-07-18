@@ -227,7 +227,7 @@ Add another ``||Agent:set active slot||``, and set it to **3**. This will select
 Add an ``||Agent:agent destroy [forward]||`` block. Add it below the last block and change its value to **right**. This will make your Agent remove the block immediately to the right making a hole in the wall, ready for a window. 
 
 ## Step 16
-Now select the new code block, ``||Agent:agent place [back]||`` and use the drop-down menu to change it to **right**. This will code your Agent to place a **Glass Pane** in the gap left after destroying the wall block. 
+Now select the new code block, ``||Agent:agent place [forward]||`` and use the drop-down menu to change it to **right**. This will code your Agent to place a **Glass Pane** in the gap left after destroying the wall block. 
 
 ### ~ tutorialhint
 ``` blocks
@@ -379,7 +379,7 @@ player.onChat("build_a_structure.", function () {
 
 
 ## Step 21
-Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent place [back]||`` code block and change it to **right**. This will place your door and complete your building. Test your code! 
+Return to the ``||Agent:AGENT||`` toolbox drawer and add another ``||Agent:agent place [forward]||`` code block and change it to **right**. This will place your door and complete your building. Test your code! 
 
 ### ~ tutorialhint
 ``` blocks
