@@ -3,7 +3,7 @@
 # Lesson 1: Code a Road Network
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **road_1**. Select the ``||Blocks:fill with||`` code block and drag it into your ``||Player:on chat command||`` block.
+Перейменуйте назву **run** в блоці ``||Player:on chat command||`` на **road_1**. Виберіть блок ``||Blocks:fill with||`` та перетягніть його всередину блоку ``||Player:on chat command||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -19,7 +19,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 2
-Use the drop-down menu to change the type of block from **Grass** to **Gray Concrete**.
+Зайдіть у випадаюче меню, щоб змінити тип блоку з **Grass** на **Gray Concrete**.
 ### ~ tutorialhint
 
 ``` blocks
@@ -34,8 +34,8 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 3
-Now open ``||Positions:POSITIONS||`` toolbox drawer and drag the world ``||Positions:[0] [0] [0]||`` code block onto your coding Workspace.
-Drag the world ``||Positions:[0] [0] [0]||`` block and replace the ``||Positions:relative||`` positions block inside the ``||Blocks:fill||`` block.
+Тепер відкрийте розділ ``||Positions:POSITIONS||`` та витягніть до робочої області блок ``||Positions:world [0] [0] [0]||``.
+Замініть блоком ``||Positions:world [0] [0] [0]||`` блок ``||Positions:відносних [~0] [~0] [~0]||`` координат  всередині блоку ``||Blocks:fill||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -50,7 +50,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 4
-Drag another ``||Positions:world [0] [0] [0]||`` positions code block from the ``||Positions:POSITIONS||`` drawer and replace the second ``||Positions:relative||`` positions block inside the ``||Blocks:fill with||`` block.
+Перетягніть ще один блок ``||Positions:world [0] [0] [0]||`` з розділу ``||Positions:POSITIONS||`` та замініть наступний блок ``||Positions:відносних||`` координат всередині блоку ``||Blocks:fill with||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -65,7 +65,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 5
-We are almost ready to test our code, however there is one more important thing we have to do to make this code work properly. Change the center, or **Y** coordinate, to one number lower. In this example, this will be **68**. Now test your code. If you have coded correctly, you should see a road appear in place of the Grass.
+Ми майже готові перевірити наш код, однак є ще одна важлива річ, яку ми повинні зробити, щоб код працював належним чином. Змініть центральну координату **Y**, на одну цифру нижче. У нашому прикладі це буде **68**. Тепер нумо перевіряти код! Якщо ви все правильно зробили, то маєте побачити, як на місці трави з’явиться дорога.
 
 ### ~ tutorialhint
 ``` blocks
@@ -81,7 +81,7 @@ player.onChat("road_1", function () {
 ```
 
 ## Step 6
-Repeat the steps for the second road.
+Повторіть кроки для наступної дороги.
 
 ### ~ tutorialhint
 ``` blocks
@@ -96,4 +96,4 @@ player.onChat("road_2", function () {
 ```
 
 ## Step 7
-(Extension) With two roads done, build more using the code you have just created. When you are finished, go to the Unit 2 Lesson 1 NPC and ask for some carpet to make road markings with using your agent to place them.
+*(Додатково)* Коли дві дороги готові, можете збудувати більше, використовуючи щойно створений код. Коли ви закінчите, поговоріть з інструктором до 1-го завдання і попросіть трохи килиму, щоб зробити дорожню розмітку. Використайте агента, щоб розмістити килими.
