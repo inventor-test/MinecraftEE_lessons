@@ -539,7 +539,7 @@ player.onChat("park_fountain", function () {
 
 
 ## Step 23
-Перетягніть блок ``||Agent:agent set active slot||``, додайте його в **кінець** програми, а значення встановіть**2**. В цьому слоті в агента лежить **відро води**. **Bucket of Water** in it, then add an ``||agent:agent place||`` **down** block.
+Перетягніть блок ``||Agent:agent set active slot||``, додайте його в **кінець** програми, а значення встановіть **2**. В цьому слоті в агента лежить **відро води**.
 
 #### ~ tutorialhint
 ``` blocks
