@@ -1,16 +1,16 @@
 ### @explicitHints 1
 
-# Lesson 2: Code a Water Feature
+# Задвання 2: Програмуємо фонтан
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **park_fountain**.
+Перейменуйте назву **run** блоку ``||Player:on chat command||`` на **park_fountain**.
 
-Dig the fountain boundary. The next phase is to create the frame or boundary of the fountain. We will do this by first digging out the ground and then replacing those blocks with **Cobblestone**.
+Потрібно викопати межу фонтану. Ми зробимо це, розкопавши землю, а потім замінивши отвори **кругляком** (Cobblestone).
 
 ## Step 2
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` set and leave it set to **4**.  
+Перетягніть блок ``||Loops:repeat [4] times||`` всередину ``||Player:on chat command||``, значення залиште **4**.  
 
-This means our Agent will repeat the next set of actions four times. Because we're going to use multiple loops, this first one will be referred to as the **outer** loop.  
+Це означає, що наш агент чотири рази повторить наступний набір дій. Оскільки ми будемо використовувати кілька циклів, цей перший буде називатися **зовнішнім** циклом.
 
 #### ~ tutorialhint
 ``` blocks
@@ -22,9 +22,9 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 3
-Drag another ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` set. Place it inside the first loop.
+Перетягніть ще один блок ``||Loops:repeat [4] times||`` всередину ``||Player:on chat command||``. Поставте його **всередину** першого цилку.
 
-Add an ``||Agent:agent destroy [forward]||`` code block to the coding Workspace and set it to and use the drop-down menu to set it to **down**.
+Додайте всередину блок ``||Agent:agent destroy [forward]||`` та змініть значення на **down** (вниз).
 
 #### ~ tutorialhint
 ``` blocks
@@ -38,7 +38,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 4
-Drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace, place it in the ``||Loops:repeat [4] times||`` after the block we added in the last step.
+Перетягніть блок ``||Agent:agent move [forward]||``, поставте його всередину ``||Loops:repeat [4] times||`` одразу після попереднього блоку.
 
 #### ~ tutorialhint
 ``` blocks
@@ -54,7 +54,7 @@ player.onChat("park_fountain", function () {
 
 
 ## Step 5
-Add an ``||Agent:agent turn [left]||`` code block inside the first or **outer** ``||Loops:repeat [4] times||`` but outside the second or inner ``||Loops:repeat [4] times||``.
+Додайте блок ``||Agent:agent turn [left]||`` **всередину зовнішнього циклу** ``||Loops:repeat [4] times||``, але **після внутрішнього** ``||Loops:repeat [4] times||``.
 
 #### ~ tutorialhint
 ``` blocks
@@ -70,12 +70,12 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 6
-Test your code now. You will see your Agent dig out the ground in a 5 x 5 frame.
+Можна перевірити код! Ви побачите, як ваш агент викопає в землі рамку 5 х 5.
 
-Fill with Cobblestone. Now we need to fill this newly formed hole with Cobblestone as a frame for the fountain.
+Тепер нам потрібно заповнити цей отвір бруківкою, що буде рамкою для фонтану.
 
 ## Step 7
-Drag the ``||Agent:agent set active slot||`` code block and place it under the ``||Loops:repeat [4] times||`` inside the ``||Player:on chat command||`` blocks. The Agent does not need to repeat this, and this is part of a new action.
+Перетягніть блок ``||Agent:agent set active slot||`` та поставте його під блоком ``||Loops:repeat [4] times||`` . Ця частина буде новою дією агента.
 
 #### ~ tutorialhint
 ``` blocks
@@ -92,7 +92,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 8
-Now repeat the steps, placing the new set after the ``||Agent:agent set active slot||`` and replacing only the ``||Agent:agent destroy [down]||`` with ``||Agent:agent place [down]||``.  
+Тепер маємо повторити попередні дії. Швидше буде скопіювати весь зовнішній цикл та поставити внизу програми, але **замінити** ``||Agent:agent destroy [down]||`` на ``||Agent:agent place [down]||``.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -116,14 +116,14 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 9
-Test your code once more. Note that this time, the Agent digs out the ground and then replaces it with **Cobblestone**. This forms the frame for the fountain.
+Можна перевірити код ще раз. На цей раз агент має розмістити кругляк на тому місці, те викопає яму. **Cobblestone**. Так утвориться рамка нашого фонтану.
 
-Dig inside the fountain. Now, we need to code the Agent to clear the ground away inside the fountain, so the water doesn't flood the park.
+Тепер нам потрібно запрограмувати агента прибрати шар землі всередині фонтану, щоб вода не затопила парк.
 
 ## Step 10
-Drag an ``||Agent:agent move [forward]||`` code block, change it to **left** and place it last in your current code.
+Перетягніть блок ``||Agent:agent move [forward]||``, змініть значення на **left** (ліворуч) та поставте в кінець програми.
 
-Get another ``||Agent:agent move [forward]||`` code block, leave it set to **forward** and place it last in your current code.
+Витягніть ще один блок ``||Agent:agent move [forward]||``, поставте в кінець та залиште значення **forward** (вперед).
 
 #### ~ tutorialhint
 ``` blocks
@@ -149,9 +149,9 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 11
-Drag a ``||Loops:repeat [4] times||`` code block onto the end of your ``||Player:on chat command||`` code and set it to **3**.
+Витягніть блок ``||Loops:repeat [4] times||`` в кінець програми ``||Player:on chat command||``, а кількість повторів встановіть **3**.
 
-There is a 3 x 3 block of Grass in the center of the fountain frame that the Agent needs to clear. Therefore, we need to give it three actions and repeat these three times. Again, we'll refer to the first as the outer loop. And the second as the inner loop.  
+У центрі фонтану є зона розміром 3х3 блоки, яку агенту потрібно очистити. Тому нам потрібно, щоб він 3 рази викопав блок і повторив це 3 рази, зміщуючись в сторону. Отже знову буде два цикли - зовнішний і внутрішній.
 
 #### ~ tutorialhint
 ``` blocks
@@ -180,7 +180,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 12
-Get another ``||Loops:repeat [4] times||`` code block. Place it inside the first loop and set it to **3**.  
+Витягніть ще один блок ``||Loops:repeat [4] times||`` Поставте його **всередину** зовнішнього циклу, змініть значення на **3**.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -211,7 +211,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 13
-Next, Get your Agent to ``||Agent:agent destroy||`` and set it to **down** with the drop-down menu.
+Тепер, встановимо **всередині циклу** блок ``||Agent:agent destroy||`` та встановимо значення **down** (вниз).
 
 #### ~ tutorialhint
 ``` blocks
@@ -242,7 +242,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 14
-Get your Agent to ``||Agent:agent move [forward]||`` and leave it set to **1**.
+Перетягніть блок ``||Agent:agent move [forward]||``, встановіть **всередині циклу** та залиште значення **1**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -274,7 +274,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 15
-Let's get the Agent back into position. Get your Agent to ``||Agent:agent move [forward]||``, set it to **back**, and change the number to **3**.
+Маємо повернути агента до початкової точки. Витягніть блок ``||Agent:agent move [forward]||`` та розмістіть його **після** внутрішнього циклу, але всередині **зовнішнього**. Встановіть напрямок **back**, та кількість **3**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -307,8 +307,8 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 16
-Get your Agent to ``||Agent:agent move [forward]||`` and set it to **left**.
-This will place your Agent at the start of the next set of three blocks to be removed, and the outer loop will ensure this is repeated three times.
+Витягніть блок ``||Agent:agent move [forward]||``, поставте під попереднім, змініть значення на **left** (ліворуч).
+Таким чином ви перемістите агента на початок наступного рядочку блоків, які потрібно викопати, а зовнішній цикл повторить цю дію три рази.
 
 #### ~ tutorialhint
 ``` blocks
@@ -342,10 +342,10 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 17
-Test your code and watch your Agent dig out the inside of the fountain frame.
+Давайте перевіримо програму і подивимось, як агент викопає внутрішню частину фонтану.
 
 ## Step 18
-Code the water feature. Drag an ``||Agent:agent move [forward]||`` code block to your main code.
+Тепер час запрограмувати водичку. Перетягніть блок ``||Agent:agent move [forward]||`` в **самий кінець** основної програми.
 
 #### ~ tutorialhint
 ``` blocks
@@ -380,7 +380,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 19
-Get an ``||Agent:agent move [forward]||`` code block, change **forward** to **right** with the drop-down menu and the number to **2**. This will place your Agent in the center of the fountain.
+Перетягніть ще один блок ``||Agent:agent move [forward]||`` та змініть напрямок на **right** (праворуч), а значення на **2**. Таким чином наш агент опиниться в центрі майбутнього фонтану.
 
 #### ~ tutorialhint
 ``` blocks
@@ -416,7 +416,7 @@ player.onChat("park_fountain", function () {
 ```
 
 ## Step 20
-Get a ``||Loops:repeat [4] times||`` code block, and change the number to **5**.
+Витягніть блок ``||Loops:repeat [4] times||``, а кількість повторів змініть на **5**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -456,8 +456,8 @@ player.onChat("park_fountain", function () {
 
 
 ## Step 21
-Return to the ``||Agent:AGENT||`` drawer and get an ``||Agent:agent place [down]||`` code block, and add it to your code, inside the ``||Loops:repeat [5] times||`` block.
-This means your Agent will place the first of five blocks of **Cobblestone** in the base of the fountain.
+В розділі ``||Agent:AGENT||`` витягніть блок ``||Agent:agent place [down]||`` та додайте до програми, поставивши його всередині блоку ``||Loops:repeat [5] times||``.
+Тепер зробимо так, щоб Агент розміщував 5 блоків **кругляку** вгору, в основі фонтану.
 
 #### ~ tutorialhint
 ``` blocks
@@ -497,8 +497,8 @@ player.onChat("park_fountain", function () {
 
 
 ## Step 22
-Get an ``||Agent:agent move [forward]||`` code block, add it to your code and change it to **up** with the drop-down menu.
-This will put your Agent at the top of the fountain, ready for the water to be added.
+Витягніть блок ``||Agent:agent move [forward]||``, поставте його **всередину** циклу та змініть значення на **up**. 
+Агент переміститься до верхньої частини фонтану, готовий ставити водичку та запускати фонтан.
 
 #### ~ tutorialhint
 ``` blocks
@@ -539,7 +539,49 @@ player.onChat("park_fountain", function () {
 
 
 ## Step 23
-Get an ``||Agent:agent set active slot||`` code block, add it to your code and change it to **2**, which is the slot in your Agent's inventory that has the **Bucket of Water** in it, then add an ``||agent:agent place||`` **down** block.
+Перетягніть блок ``||Agent:agent set active slot||``, додайте його в **кінець** програми, а значення встановіть**2**. В цьому слоті в агента лежить **відро води**. **Bucket of Water** in it, then add an ``||agent:agent place||`` **down** block.
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("park_fountain", function () {
+  for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 4; index++) {
+      agent.destroy(DOWN)
+      agent.move(FORWARD, 1)
+    }
+    agent.turn(LEFT_TURN)
+  }
+  agent.setSlot(1)
+  for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 4; index++) {
+      agent.place(DOWN)
+      agent.move(FORWARD, 1)
+    }
+    agent.turn(LEFT_TURN)
+  }
+  agent.move(LEFT, 1)
+  agent.move(FORWARD, 1)
+  for (let index = 0; index < 3; index++) {
+      for (let index = 0; index < 3; index++) {
+        agent.destroy(DOWN)
+        agent.move(FORWARD, 1)
+      }
+      agent.move(BACK, 3)
+      agent.move(LEFT, 1)
+  }
+  agent.move(FORWARD, 1)
+  agent.move(RIGHT, 2)
+  for (let index = 0; index < 5; index++) {
+    agent.place(DOWN)
+    agent.move(UP, 1)
+  }
+  agent.setSlot(2)
+})
+```
+
+
+## Step 24
+Додайте в кінець блок ``||agent:agent place||``, а значення встановіть **down** (вниз). Цей блок змусить агента розмістити воду.
 
 #### ~ tutorialhint
 ``` blocks
@@ -581,5 +623,5 @@ player.onChat("park_fountain", function () {
 ```
 
 
-## Step 24
-Now check and test your code before placing your fountain somewhere in the park.
+## Step 25
+Тепер перегляньте та перевірте свій код спочатку десь подалі, перш ніж розміщувати фонтан у парку. Покличте агента свистком та запускайте код!
