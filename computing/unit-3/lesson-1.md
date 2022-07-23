@@ -1,11 +1,11 @@
 ### @explicitHints 1
 
-# Lesson 1: Code a Park Fence
+# Завдання 1: Програмуємо паркову огорожу
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **park_fence**. 
+Перейменуйте назву **run** в блоці ``||Player:on chat command||`` на **park_fence**. 
 
-Drag and drop the ``||Agent:agent set active slot||`` code block to the coding Workspace and add it to your  ``||Player:on chat command||`` code block.
+Витягніть блок ``||Agent:agent set active slot||`` та вставте його в  ``||Player:on chat command||``.
 
 ### ~ tutorialhint
 ``` blocks
@@ -14,7 +14,7 @@ player.onChat("park_fence", function () {
 })
 ```
 ## Step 2
-Drag the ``||Loops:repeat [4] times||`` into your ``||Player:on chat command||`` set and change it to **25**.
+Перетягніть блок ``||Loops:repeat [4] times||`` всередину ``||Player:on chat command||`` та змініть кількість повторів на **25**.
 
 ### ~ tutorialhint
 ``` blocks
@@ -27,9 +27,9 @@ player.onChat("park_fence", function () {
 ```
 
 ## Step 3
-Drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeat [25] times||`` loop, then set it to **1**. 
+Перетягніть блок ``||Agent:agent move [forward]||``, та поставте його всередину циклу ``||Loops:repeat [25] times||``, в блоці ``||Player:on chat command||``, цифру залиште **1**. 
 
-Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace, add it to your ``||Player:on chat command||`` code block, inside the ``||Loops:repeats [25] times||`` loop, under the ``||Agent.agent move[forward]||`` code block, then change **forward** to **back**.
+Візьміть блок ``||Agent:agent place [forward]||`` та перетягніть до ``||Player:on chat command||`` всередину циклу ``||Loops:repeats [25] times||``, під блок ``||Agent.agent move[forward]||``, змініть **forward** на **back** (назад).
 
 ### ~ tutorialhint
 ``` blocks
@@ -43,7 +43,7 @@ player.onChat("park_fence", function () {
 ```
 
 ## Step 4
-Drag the ``||Agent:agent turn [left]||`` code block to your ``||PLayer:on chat command||`` code block after the loop. Set it to the direction your Agent needs to turn. In our example, this is **left**. 
+Перетягніть блок ``||Agent:agent turn [left]||`` всередину ``||PLayer:on chat command||``, поставте його **під** циклом repeat. Оберіть напрямок, в якому агент має повернутись. За прикладом він буде **left** (ліворуч). 
 
 ### ~ tutorialhint
 ``` blocks
@@ -58,6 +58,6 @@ player.onChat("park_fence", function () {
 ```
 
 ## Step 5
-Test your code. Place your Agent on the starting block and run your code by pressing **T** to open the chat box and type **park_fence**. 
+Перевірте свій код. Розмістіть свого агента на стартовий блок за допомогою свистка і запустіть код, відкривши чат буквою **T** та вписавши назву своєї програми. 
 
-This code will only do one side at a time. Make sure your agent has enough blocks to finish each side before you run! Ask the Unit 3 Lesson 1 NPC for more blocks if you need them.
+Агент збудує лише одну сторону за раз. Переконайтесь, що у вашого агента достатньо блоків, щоб закінчити кожну сторону! Щоб отримати більше блоків, попросіть їх в інструктора до першого завдання.
