@@ -1,11 +1,11 @@
 ### @explicitHints 1
 
-# Lesson 3: Plant Some Flowers 
+# Завдання 3: Садимо квіти 
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **plant_flowers**. 
+Перейменуйте назву **run** команди ``||Player:on chat command||`` на **plant_flowers**. 
 
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` and set the number to the number of blocks you have along one side of your park. In our example, we will set this to **20**. 
+Перетягніть блок ``||Loops:repeat [4] times||`` всередину ``||Player:on chat command||`` та встановіть значення рівним довжині сторони вашого парку. За прикладому це буде **20**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -17,7 +17,7 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 2
-Now drag the ``||Agent:agent set active slot||`` code block inside the ``||loops: repeat loop||``.    
+Тепер перетягніть блок ``||Agent:agent set active slot||`` всередину циклу ``||loops: repeat||``.    
 
 #### ~ tutorialhint
 ``` blocks
@@ -29,13 +29,13 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 3
-Visit a new toolbox drawer in the left menu, called the ``||Math:MATH||`` drawer. 
+Зайдіть до розділу ``||Math:MATH||``. 
 
-The blocks in this drawer allow you to use mathematics within your code.
+Блоки в цьому розділі дозволяють користуватись математичними виразами.
 
-Drag and drop the ``||Math:pick random [0] to [10]||`` code block to your ``||Player:on chat command||`` and place it as replacement for the number element of your ``||Agent:agent set active slot||``. 
+Перетягніть блок ``||Math:pick random [0] to [10]||`` всередину ``||Player:on chat command||`` та замініть ним цифру 1 в блоці ``||Agent:agent set active slot||``. 
 
-This means that you have coded your Agent pick a random slot in its inventory, rather than choosing one slot specifically. 
+Тепер ми запрограмували, щоб агент обирав випадковий слот у своєму інвентарі, а не якийсь один.
 
 #### ~ tutorialhint
 ``` blocks
@@ -47,7 +47,7 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 4
-Set the first number to **1** and the second to **5**, corresponding with the five slots in the agent's inventory. 
+Першим числом впишіть **1**, а другим **5**, оскількі в агента зараз зайняті 5 слотів інвентаря. 
 #### ~ tutorialhint
 ``` blocks
 player.onChat(" plant_flowers", function () {
@@ -59,7 +59,7 @@ player.onChat(" plant_flowers", function () {
 
 
 ## Step 5
-Code your Agent randomly move around. Now visit the ``||Agent:Agent||``drawer and drag the ``||Agent:agent move [forward]||`` code block to the coding Workspace.   
+Запрограмуємо агента рухатись випадковим чином. У розділі ``||Agent:Agent||`` знайдіть та перетягніть блок ``||Agent:agent move [forward]||`` в кінець нашої програми.   
 
 #### ~ tutorialhint
 ``` blocks
@@ -72,9 +72,9 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 6
-Add another ``||Math:pick random [0] to [10]||`` to replace the number oval of the ``||Agent:agent move [forward]||``. Change the second number of the ``||Math:pick random [0] to [10]||`` to **20**. 
+Витягніть ще один блок ``||Math:pick random [0] to [10]||`` та замініть цифру 1 в блоці ``||Agent:agent move [forward]||``. Замініть друге число в блоці ``||Math:pick random [0] to [10]||`` на **20**. 
 
-When this line of code is added, your Agent will move forward to a random block between its current position and 20 blocks ahead. 
+З цим рядком коду агент буде рухатись вперед на випадкову кількість блоків, від 1 до 20.
 
 #### ~ tutorialhint
 ``` blocks
@@ -87,7 +87,7 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 7
-Drag two ``||Agent:agent place [forward]||`` code blocks to the coding Workspace, setting the second one to **back** with the drop-down menu. 
+Перетягніть два блоки ``||Agent:agent place [forward]||`` та поставте в кінець програми, але в одного блоку значення змініть на **back** (назад). 
 
 #### ~ tutorialhint
 ``` blocks
@@ -103,7 +103,7 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 8
-Drag another ``||Agent:agent set active slot||`` code block to the coding Workspace. Revisit the ``||Math:MATH||`` drawer and add another ``||Math:pick random [0] to [10]||``. Add it to your ``||Agent:agent set active slot||`` code block and change the numbers to 1 and 5. 
+Перетягніть ще один блок ``||Agent:agent set active slot||`` до програми. З розділу ``||Math:MATH||`` витягніть блок ``||Math:pick random [0] to [10]||`` та вставте в блок ``||Agent:agent set active slot||``, змініть значення на 1 та 5. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -119,9 +119,9 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 9
-Now revisit the ``||Agent:Agent||`` drawer and select an ``||Agent:agent move [forward]||`` code block to the coding Workspace, setting it to **back** with the drop-down menu. 
+З розділу ``||Agent:Agent||`` витягніть блок ``||Agent:agent move [forward]||``, вкажіть значення **back** (назад).
 
-Select another ``||Math:pick another pick random [0] to [10]||`` and add it to your ``||Agent:agent move [back]||`` code block and set the numbers to **0** and **20**. 
+Додайте блок ``||Math:pick another pick random [0] to [10]||`` всередину ``||Agent:agent move [back]||`` та поставте значення **0** та **20**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -138,9 +138,9 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 10
-Now visit the ``||Agent:Agent||`` drawer and drag two ``||Agent:agent place [forward]||`` code blocks to the coding Workspace, setting the second one to **back**. 
+Тепер з розділу ``||Agent:Agent||`` перетягніть ще два блоки ``||Agent:agent place [forward]||``, в одному з них змінивши значення на **back**. 
 
-Finally, drag an ``||Agent:agent move [left]||`` code block to the coding Workspace to finish this code. 
+Наостанок перетягніть блок ``||Agent:agent move [left]||`` до програми, щоб завершити її. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -160,6 +160,6 @@ player.onChat(" plant_flowers", function () {
 ```
 
 ## Step 11
-Position your Agent and run the code. Position your Agent at one corner of your park, with the back of the Agent against a fence and with the main body of the park to the left.
+Покличте агента до себе за допомогою свистка та запустіть код. Розмістіть свого агента в одному з кутів вашого парку, так щоб позаду нього була огорожа, а сам парк знаходився ліворуч від нього.
 
-Test your code. Your Agent should now move forward to a random location, plant two randomly selected flowers, move backward, do the same and move left to start again. This will create a random meadow of flowers. 
+Гайда перевіряти наш код! Агент повинен рухатися вперед у випадкове місце, садити пару випадково вибраних квітів, рухатися назад, робити те саме і переміщатися ліворуч, щоб почати все спочатку. Має утовритись луг з випадкових квітів.
