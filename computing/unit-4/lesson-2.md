@@ -1,11 +1,11 @@
 ### @explicitHints 1
 
-# Lesson 2: Code Zoo Paths 
+# Завдання 2: Програмуємо доріжки зоопарку 
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **zoo_path_1**. 
+Перейменуйте назву **run** в блоці ``||Player:on chat command||`` на **zoo_path_1**. 
 
-Select the ``||Blocks:fill with||`` code block and drag it into your ``||Player:on chat command||`` block. 
+Перетягніть блок ``||Blocks:fill with||`` та вставте всередину ``||Player:on chat command||``. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -20,7 +20,7 @@ player.onChat("zoo_path_1", function () {
 ```
 
 ## Step 2
-Use the drop-down menu to change the type of material from **Grass** to **Gravel**. 
+Використовуючи випадаюче меню, змініть блок побудови з **трави** на **Gravel** (гравій). 
 
 #### ~ tutorialhint
 ``` blocks
@@ -35,11 +35,11 @@ player.onChat("zoo_path_1", function () {
 ```
 
 ## Step 3
-Now open ``||Positions:POSITIONS||`` on the left-hand menu. 
+Тепер відкриємо розділ ``||Positions:POSITIONS||``. 
 
-Remember, this drawer contains code blocks that allow you to manipulate the Minecraft world through ***positions*** or ***coordinates***. Every block in a Minecraft world has a position on an X, Y, and Z axis. 
+Пригадаємо, що в ньому містяться блоки, які дозволяють змінювати світ у Minecraft через ***позиції***, або ж ***координати***. Кожен блок у світі Minecraft має свою позицію по осі X, Y та Z.
 
-Drag two ``||Positions:world [0] [0] [0]||`` ovals onto your coding Workspace and replace the ``||Positions:[~0] [~0] [~0]||`` ovals in the ``||Blocks:from||`` and ``||Blocks:to||`` elements. 
+Перетягніть два блоки ``||Positions:world [0] [0] [0]||`` та замініть відносні координати ``||Positions:[~0] [~0] [~0]||`` в полях ``||Blocks:from||`` і ``||Blocks:to||``. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -54,7 +54,8 @@ player.onChat("zoo_path_1", function () {
 ```
 
 ## Step 4
-Now add your first set of coordinates from **Step 3** to the ``||Blocks:from||`` set of ``||Positions:world [0] [0] [0]||`` positions. 
+Тепер маємо додати початкові координати доріжки в поле ``||Blocks:from||``, всередину комірок ``||Positions:world [0] [0] [0]||``. 
+Впишіть координати свого ***початку*** доріжки, або ж скористайтесь прикладом: в ньому ці числа **-40, 69, -575**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -69,7 +70,7 @@ player.onChat("zoo_path_1", function () {
 ```
 
 ## Step 5
-Do the same for the ``||Blocks:to||`` set of ``||Positions:world [0] [0] [0]||`` positions, adding your coordinates from **Step 4**. 
+Те саме маємо зробити для поля ``||Blocks:to||``. Впишіть координати ***кінця*** доріжки в комірки ``||Positions:world [0] [0] [0]||``. Знайдіть в світі свій варіант, або скористайтесь прикладом: в ньому ці числа **-60, 69, -575**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -84,9 +85,8 @@ player.onChat("zoo_path_1", function () {
 ```
 
 ## Step 6
-Change the center, or **Y** coordinate, to one number lower. In this example, this will be **68**.  
-
-Remember, the center number of coordinates represents the height, from the bottom of the world **0** to the top **256**. We must change this to one block lower because we want to change the **Grass** beneath our feet to **Grey Gravel** and the block selected as part of the original coordinates is the that of our player's legs. So if we ran the code now, the road would be one block above ground level. This way, we replace the grass instead. 
+Тепер маємо змінити *другу* координату **Y** на одну цифру менше, щоб доріжка створилась **в землі**. В нашому прикладі це буде **68**.  
+Пам'ятайте, центральна координата означає висоту, в нижній точці світу вона **0**, а в самій верхній **256**. Ми хочемо змінити траву **під ногами** на гравій, а блок, в якому ми заміряли координати, - це **ноги** нашого гравця. Тож якщо запустимо код без змін, дорога буде **над землею** на 1 блок вище. А зменшивши висоту, замінимо траву.
 
 #### ~ tutorialhint
 ``` blocks
@@ -100,8 +100,8 @@ player.onChat("zoo_path_1", function () {
 })
 ```
 ## Step 7
-Now test your code. If you have coded correctly, you should see a road appear in place of the grass.   
+Давайте перевіримо ваш код! Якщо все правильно, в обраних вами координатах трава має замінитись на гравій.   
 
 ## Step 8
-Repeat the steps for the second, third, and fourth paths using your **Green Wool, Orange Wool** and **Red Wool** markers. You can plan any path network you wish if the example below doesn't suit your plans for your zoo. 
+Запустіть програму з координатами для інших 2-3 доріжок. Можете спланувати систему доріг так, як вам захочеться, але залиште місце для вольєрів. 
 
