@@ -1,11 +1,11 @@
 ### @explicitHints 1
 
-# Lesson 1: Code a Zoo Entrance
+# Завдання 1: Програмуємо вхід до зоопарку
 
 ## Step 1
-Rename the **run** element of the ``||Player:on chat command||`` block to **build_gates**.
+Перейменуйте назву **run** блоку ``||Player:on chat command||`` на **build_gates**.
 
-Drag the ``||Agent:agent set active slot||`` code block to the coding Workspace and leave it set it to **1**. Then add a ``||Agent:agent move [forward]||`` block and use the drop-down menu to change it to **up**, and leave the number at **1**.
+Перетягніть блок ``||Agent:agent set active slot||``, значення залиште **1**. Тоді додайте блок ``||Agent:agent move [forward]||``, а значення змініть на **up** (вгору), значення має залишитись **1**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -16,7 +16,7 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 2
-Drag the ``||Loops:repeat [4] times||`` code block into your ``||Player:on chat command||`` and set the number to **15**. This is going to be a large gate.
+Поставте блок ``||Loops:repeat [4] times||`` в кінець програми ``||Player:on chat command||`` та змініть значення на **15**. Це будуть велиикі ворота.
 
 #### ~ tutorialhint
 ``` blocks
@@ -30,9 +30,9 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 3
-Drag the ``||Agent:agent place [forward]||`` code block to the coding Workspace and use the drop-down menu to set it to **down**.   
+Перетягніть всередину циклу блок ``||Agent:agent place [forward]||``, змініть значення на **down** (вниз).   
 
-Add an ``||Agent:agent move [forward]||`` code block to your main code, use the drop-down menu to change it to **right**, and leave the number at **1**.
+Додайте блок ``||Agent:agent move [forward]||``, напрямок маємо змінити на **right** (праворуч), а кількість кроків залишити **1**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -47,9 +47,9 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 4
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.
+Перетягніть ще один блок ``||Agent:agent place [forward]||`` з розділу ``||Agent:Agent||`` та встановіть напрямок **down** (вниз).
 
-Drag another ``||Agent:agent move [forward]||`` code block to the coding Workspace, leaving it set to **forward** and **1**.
+Поставте далі блок ``||Agent:agent move [forward]||``, залишимо напрямок **forward** та значення **1**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -67,9 +67,9 @@ player.onChat("build_gates", function () {
 
 
 ## Step 5
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.
+Перетягніть ще один блок ``||Agent:agent place [forward]||`` з розділу ``||Agent:Agent||`` та встановіть напрямок **down** (вниз).
 
-Then also add a ``||Agent:agent move [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **left**, leaving the number at **1**.
+Також додайте ще один блок ``||Agent:agent move [forward]||`` і встановіть напрямок **left** (ліворуч), кількість залишимо **1**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -88,8 +88,8 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 6
-Drag another ``||Agent:agent place [forward]||`` code block from the ``||Agent:Agent||`` drawer and set it to **down**.  
-Now we just need to get our ``||Agent:Agent||`` to the next starting position to complete this part of the gate's code.
+Витягніть ще один блок ``||Agent:agent place [forward]||`` з розділу ``||Agent:Agent||``, встановіть значення **down** (вниз).  
+Тепер ми маємо направити ``||Agent:агента||`` до наступної початкової точки, щоб завершити першу частину воріт.
 
 #### ~ tutorialhint
 ``` blocks
@@ -109,7 +109,7 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 7
-Revisit the ``||Agent:Agent||`` drawer, drag two more ``||Agent:agent move [forward]||`` code blocks to the coding Workspace, and connect under the ``||Agent:agent place [down]||`` block. Use the drop-down menu to change **forward** to **back** in the first one and the **forward** to **up** in the second one.  
+З розділу ``||Agent:Agent||`` перетягніть ДВА блоки ``||Agent:agent move [forward]||`` та встановіть їх під блоком ``||Agent:agent place [down]||``. У випадаючому меню змініть напрямок на **back** у першому блоці, та **up** в другому.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -130,18 +130,18 @@ player.onChat("build_gates", function () {
 })
 ```
 ## Step 8
-Position your Agent on either **Yellow wool** blocks using your whistle.
+За допомогою свистка розмістіть агента на **блоці жовтої шерсті**.
 
 ## Step 9
-Run your code. Type your ``||Player:on chat command||`` into the chat function **T** and watch your Agent build the first pillar of the gate.
+Давайте перевіримо код! Введіть назву своєї команди ``||Player:on chat command||`` до чату, відкривши його кнопкою **T** та прослідкуйте, чи правильно агент будує першу частинку воріт.
 
 ## Step 10
-Repeat this for the second pillar. Position your Agent on the other **Yellow wool** block with your whistle, then run your code again. You should now have two wooden pillars.  
+Виконайте цю програму для другої частини воріт. Розмістіть агента на іншому **блоці жовтої шерсті** і запустіть команду ще раз. Тепер у вас має бути два дерев'яних стовпи для входу.  
 
 ## Step 11
-Code the sign entrance. Now we need to add the sign at the top.   
+Давайте запрограмуємо напис над входом.   
 
-Get a new ``||Player:on chat command||`` block and rename the **jump** element to **zoo_sign**.
+Додайте ще один блок ``||Player:on chat command||`` та перейменуйте його з **jump** на **zoo_sign**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -166,9 +166,9 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 12
-Select the ``||Blocks:print [HELLO]||`` code block, and drag it to your new on chat command code block.
+Вставте блок ``||Blocks:print [HELLO]||`` до нового блоку ``||Player:on chat command||``.
 
-Change the **HELLO** text to **ZOO**.
+Змініть напис **HELLO** на **ZOO**, або щось своє. ***Напис має бути англійською мовою.***
 
 #### ~ tutorialhint
 ``` blocks
@@ -198,9 +198,9 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 13
-Use the drop-down menu to change the type of block material from **Grass** to **Oak Wood**.
+Змінимо блок, з якого будуватиметься напис, з **трави** на **Oak Wood** (блок дубового дерева). Або виберіть свій варіант.
 
-Drag a ``||Positions:world [0] [0] [0]||`` oval, replacing the ``||Positions:[~0] [~0] [~0]||`` oval inside your ``||Blocks:print [ZOO]||`` block.
+Перетягніть блок ``||Positions:world [0] [0] [0]||`` та замініть ним блок відносних координат ``||Positions:[~0] [~0] [~0]||`` всередині блоку ``||Blocks:print||``.
 
 #### ~ tutorialhint
 ``` blocks
@@ -230,9 +230,9 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 14
-Change the coordinates in the ``||Positions:world||`` position to the numbers of where you would like your text to begin. In our example, this is **-31, 83, -560**. Take a moment to remember the importance of the minus when using these numbers.
+Змініть координати на ``||Positions:world (абсолютні)||`` координати над воротами. Маємо вибрати точку, в якій буде починатись наш напис. За прикладом координати будуть **-31, 83, -560**. Зауважте, що *мінус* в числах дуже важливий для координат.
 
-This may take a little trial and error to get correct in your world, depending on how many letters you choose to create, where they are placed and what direction they are in.
+Можуть знадобитись декілька спроб, щоб правильно розташувати напис, залежно від того скільки букв у написі, де вони розміщуються та в якому напрямку розвернуті.
 #### ~ tutorialhint
 ``` blocks
 player.onChat("zoo_sign", function () {
@@ -261,7 +261,7 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 15
-Change the ``||Blocks:along||`` value to suit the direction you would like the text to go. In our example, this is **North (negative Z)**, but in your own version, it might be different.  
+Щоб обрати правильний напрямок написання, змініть значення параметру ``||Blocks:along||``. За прикладом це буде **North (negative Z)**, але якщо ви програмуєте свою версію воріт, напрямок може бути іншим.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -291,4 +291,4 @@ player.onChat("build_gates", function () {
 ```
 
 ## Step 16
-Run the code. Time to test your code. Enter the **zoo_sign** command into the chat **T** function and press Enter. You will see the word **ZOO** appear in the sky above the zoo gates.
+Гайда перевіряти код! Впишіть в чат команду **zoo_sign** та запустіть її кнопкою Enter. Маєте побачити, як у світі над воротами з'являється напис **ZOO** (або ваш власний).
