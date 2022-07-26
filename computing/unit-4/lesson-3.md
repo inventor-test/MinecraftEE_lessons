@@ -1,13 +1,13 @@
 ### @explicitHints 1
 
-# Lesson 3: Code Animal Enclosures 
+# Завдання 3: Програмуємо житло для тварин 
 
 ## Step 1
-Tell the BUILDER where to start. In MakeCode, rename the **run** element of the ``||Player:on chat command||`` block to **ocelot_wall**. 
+В цьому завданні скористуємось Будівельником! Спочатку маємо вказати Будівельнику (BUILDER), де починати. Перейменуйте назву **run** в блоці  ``||Player:on chat command||`` на **ocelot_wall**. 
 
-Visit the ``||Advanced:ADVANCED||`` drawer on the left of the screen then visit the ``||Builder:BUILDER||`` drawer on the left of the screen. The ``||Builder:BUILDER||`` drawer allows players to access and manipulate the positions mechanic of Minecraft. Imagine the ``||Builder:BUILDER||`` as an invisible ``||Agent:Agent||``. 
+Щоб знайти блоки для Будівельника, зайдіть в чорний розділ ``||Advanced:ADVANCED||``, а тоді знайдіть там розділ ``||Builder:BUILDER||``. Розділ ``||Builder:BUILDER||`` дозволяє гравцям керувати побудовою різних конструкцій в Minecraft. Можна уявити ``||Builder:будівельника||`` як невидимого ``||Agent:агента||``. 
 
-Set the coordinates of the first to begin. Drag a ``||Builder:builder teleport to [~0] [~0] [~0]||`` block into your ``||Player:on chat command||`` block. 
+Отже, задамо початкову точку. Перетягніть блок ``||Builder:builder teleport to [~0] [~0] [~0]||`` до вашої програми ``||Player:on chat command||``. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -17,9 +17,9 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 2
-Drag the``||Positions:world [0] [0] [0]||`` oval onto your coding Workspace, replacing the **relative** coordinates oval already in there. 
+Перетягніть блок ``||Positions:world [0] [0] [0]||`` до попереднього блоку, замінивши **відносні** координати. 
 
-Now set the ``||Positions:world [0] [0] [0]||`` coordinates to the position you want to start building your wall. We have marked our intended start point with a **Gold Block** at the coordinates **-40, 69, -575**. Write the coordinates of your starting point, or first marker, in your workbook. 
+Тепер змінимо початкову координату ``||Positions:world [0] [0] [0]||`` на ту, де ви хочете почати будувати стіну. В світі є помітка можливого місця старту, з **блоком золота** в координатах **-40, 69, -575**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -29,16 +29,16 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 3
-Tell the BUILDER the direction. Now, we need to tell it what direction to build in. Remember, Minecraft worlds have a North to South and East to West, as well as up and down grid. The easiest way to do this is to use a Compass. 
+Тепер нам потрібно вказати Будівельнику, в якому напрямку будувати. Згадайте, що у світі Minecraft є 4 напрямки: північ та південь, і схід та захід, а також напрямок вгору та вниз. Простий спосіб знайти правильний шлях за допомогою компаса.
 
-You will find a compass in your inventory.
+Ви знайдете компас у своєму інвентарі.
 
-As you move around, the **compass** does too. You can use this to find your North (the red dial is pointing North), East, South and West. The direction on the **compass** is West. This is the direction we want the ``||Builder:BUILDER||`` to work. 
+Якщо ви покрутитесь, так само буде крутитись і стрілка **компасу**. В цьому світі червона стрілка вказує на північ, тоді зліва буде схід, праворуч захід, позаду південь. За прикладом ``||Builder:BUILDER||`` має почати будувати на Захід. 
 
 ## Step 4
-Return to the ``||Builder:BUILDER||`` drawer and look for the ``||Builder:builder face [West (negative X)||`` code block. Add this to your main code and use the drop-down menu to set the correct direction for your build. 
+Зайдіть в розділ ``||Builder:BUILDER||`` та витягніть блок ``||Builder:builder face [West (negative X)||``. Додайте його до програми. 
 
-Note:  If the direction your player is facing is East, North or South, change this code block accordingly. To recap, you use the **compass** to find the direction you want the ``||Builder:BUILDER||`` to go and then enter that into this code block. 
+Примітка: Якщо ви будуєте свою конструкцію, то змініть напрямок відповідно до побажань. Використайте **компас**, щоб знайти правильний напрямок для ``||Builder:BUILDER||`` та виберіть його в блоці. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -49,7 +49,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 5
-Now return to the ``||Builder:BUILDER||`` menu and drag a ``||Builder:builder move [forward]||`` block to your main code. 
+З розділу ``||Builder:BUILDER||`` перетягніть блок ``||Builder:builder move [forward]||`` до основної програми. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -61,9 +61,9 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 6
-Change the number of the ``||Builder:builder move [forward]||`` to the number of blocks you would like to build. In our example, this is **21**, but it might be different for your enclosure. 
+Змініть число кроків у блоці ``||Builder:builder move [forward]||`` до потрібної кількості (довжини вашої стіни). За прикладом, це буде число **21**, але у вас може бути інше. 
 
-Now drag a ``||Builder:builder turn [left]||`` code block to your main code. 
+Тепер перетягніть блок ``||Builder:builder turn [left]||`` до основної програми. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -76,9 +76,9 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 7
-Change this to the direction you wish your ``||Builder:BUILDER||`` to face next. In our example, this will be right. 
+Змініть напрямок повороту на той, в якому ``||Builder:BUILDER||`` має повернутись. За прикладом, це буде **right** (праворуч). 
 
-Add another ``||Builder:builder move [forward]||`` code block and change the number to the total number of blocks you would like to build in this new direction. In our example, this is **9**. 
+Додайте ще один блок ``||Builder:builder move [forward]||`` та змініть число на кількість блоків в іншій стінці. За прикладом це буде **9**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -92,9 +92,9 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 8
-Tell the BUILDER what material to use. Finally, give your ``||Builder:BUILDER||`` something to build with. Return to your ``||Builder:BUILDER||`` drawer and drag a ``||Builder:builder trace a path from mark with||`` code block to your main code. 
+Наостанок, маємо вказати ``||Builder:будівельнику||``, якими блоками будувати.  З розділу ``||Builder:BUILDER||`` перетягніть блок ``||Builder:builder trace a path from mark with||`` до основної програми. 
 
-This tells your builder to leave a trail of a given material in the path it traces as it moves. 
+Цей блок вказує будівельнику залишати лінію з якогось блоку на шляху його пересування. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -109,7 +109,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 9
-Use the drop-down menu to change the material element to the material you would like your perimeter wall to be. In our example, we will use **Stone Bricks**. 
+У випадаючому меню змініть матеріал на бажаний для побудови стіни. У прикладі ми використовуємо **Stone Bricks** (кам'яні цеглинки). 
 
 #### ~ tutorialhint
 ``` blocks
@@ -124,13 +124,13 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 10
-Run the code to build the walls.Test your code. ``||Builder:BUILDER||`` should now start at position **--40, 69, -575** and move West by **21** blocks, turn **left** and move **9** blocks while placing **Stone Bricks** on the way. The result is a small perimeter wall around your ocelot enclosure. You'll see this happens very fast in comparison to ``||Agent:Agent||`` and ``||Blocks:BLOCKS||`` in previous lessons. With a little preplanning, you can create huge structures in seconds. 
+Давайте перевіримо код! ``||Builder:Будівельник||`` має телепортуватись до координати **--40, 69, -575** та пройти на Захід **21** блок, тоді повернутись **ліворуч** і пройти ще **9** блоків, при цьому ставити на шляху **кам'яні цеглинки**. В результаті має вийти невеличкий напів-периметр навколо першого житла. Можна помітити, що процес відбувається значно швидше, ніж при використанні ``||Agent:агента||`` та блоків з розділу ``||Blocks:BLOCKS||``. З невеличким плануванням можна створювати величезні побудови всього за кілька секунд. 
 
 ## Step 11
-Add fencing and other details. This wall won't keep ocelots in, let's add fencing above to make sure they don't escape. 
+За прикладом ми будуємо вольєр для оцелотів. Ця стінка не втримає їх, тож додамо повище огорожу.
 
 ## Step 12
-Repeat the above coding or adjust your existing code to do this. You will only need to change your location to one block higher and the material to **Oak Fence**. See our example: 
+Можете зробити новий код, або підлаштувати вже готовий. Потрібно всього лиш змінити значення **висоти** на **1** блок, а матеріал, наприклад, на **Oak Fence** (дерев'яний паркан). Можете зазирнути у приклад. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -145,17 +145,17 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 13
-Now we can add some features to the enclosure for the ocelot. 
+Тепер ми можемо якось покращити житло оцелотам (або вашим тваринкам).
 
-Code an ocelot to the enclosure. All that remains is to introduce the ocelot to its new enclosure. 
+Запрограмуємо спавн оцелота у його житлі. Залишиться лише познайомити його з новим житлом.
 
 ## Step 14
-Bring a new ``||Player:on chat command||`` block to the coding window and name it **ocelot**. 
+Витягніть новий блок ``||Player:on chat command||`` та перейменуйте його на **ocelot**. 
 
 ## Step 15
-Drag a ``||Mobs:spawn [animal] at||`` code block from the ``||Mobs:MOBS||`` menu to your new ``||Player:on chat command||`` code. 
+Витягніть блок ``||Mobs:spawn [animal] at||`` з розділу ``||Mobs:MOBS||`` до вашого нового блоку ``||Player:on chat command||``. 
 
-Use the drop-down menu to change the **animal** element to **ocelot**. 
+У випадаючому меню **animal** виберіть потрібну тваринку, наприклад **ocelot** (оцелота). 
 
 #### ~ tutorialhint
 ``` blocks
@@ -165,7 +165,7 @@ player.onChat("ocelot", function () {
 ```
 
 ## Step 16
-Go to the ``||Positions:POSITIONS||`` drawer and grab a ``||Positions:world [0] [0] [0]||`` to replace the **relative** coordinates oval. Then change the numbers to a position inside the enclosure. In our example, we will set them to **-50, 69, -580**. 
+Зайдіть в розділ ``||Positions:POSITIONS||`` та перетягніть блок **абсолютних** координат ``||Positions:world [0] [0] [0]||``, щоб замінити **відносні** координати. Тепер маємо записати в них координату десь всередині вольєру. За прикладом можемо взяти **-50, 69, -580**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -175,7 +175,8 @@ player.onChat("ocelot", function () {
 ```
 
 ## Step 17
-Spawn the ocelot. Run your code. Once complete, you should see an **ocelot** appear! 
+Спробуємо перевірити код та заспавнити оцелота (чи вашу тварину). Якщо все правильно, тваринка має з'явитись всередині свого житла!
+
 
 ## Step 18
-Add other enclosures and animals. Now you can add more enclosures and animals, like a **wolf** and a **polar bear**. Consider their habitat and decorate their enclosures accordingly.
+Тепер можете додати інші вольєри, наприклад для **вовка** та **полярного ведмедя**, або будь-яких інших. Врахуйте їх середовище проживання та облаштуйте їх житло відповідно до цього.
