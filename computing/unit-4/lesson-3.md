@@ -19,12 +19,12 @@ player.onChat("ocelot_wall", function () {
 ## Step 2
 Перетягніть блок ``||Positions:world [0] [0] [0]||`` до попереднього блоку, замінивши **відносні** координати. 
 
-Тепер змінимо початкову координату ``||Positions:world [0] [0] [0]||`` на ту, де ви хочете почати будувати стіну. В світі є помітка можливого місця старту, з **блоком золота** в координатах **-40, 69, -575**. 
+Тепер змінимо початкову координату ``||Positions:world [0] [0] [0]||`` на ту, де ви хочете почати будувати стіну. За прикладом початок буде трохи правіше блоку золота, в координатах **-39, 69, -577**. 
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
 })
 ```
 
@@ -43,7 +43,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
 })
 ```
@@ -54,7 +54,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
     builder.move(FORWARD, 1)
 })
@@ -68,7 +68,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(LEFT_TURN)
@@ -83,7 +83,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -99,7 +99,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -114,7 +114,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -124,7 +124,7 @@ player.onChat("ocelot_wall", function () {
 ```
 
 ## Step 10
-Давайте перевіримо код! ``||Builder:Будівельник||`` має телепортуватись до координати **--40, 69, -575** та пройти на Захід **21** блок, тоді повернутись **ліворуч** і пройти ще **9** блоків, при цьому ставити на шляху **кам'яні цеглинки**. В результаті має вийти невеличкий напів-периметр навколо першого житла. Можна помітити, що процес відбувається значно швидше, ніж при використанні ``||Agent:агента||`` та блоків з розділу ``||Blocks:BLOCKS||``. З невеличким плануванням можна створювати величезні побудови всього за кілька секунд. 
+Давайте перевіримо код! ``||Builder:Будівельник||`` має телепортуватись до координати **-39, 69, -577** та пройти на Захід **21** блок, тоді повернутись **ліворуч** і пройти ще **9** блоків, при цьому ставити на шляху **кам'яні цеглинки**. В результаті має вийти невеличкий напів-периметр навколо першого житла. Можна помітити, що процес відбувається значно швидше, ніж при використанні ``||Agent:агента||`` та блоків з розділу ``||Blocks:BLOCKS||``. З невеличким плануванням можна створювати величезні побудови всього за кілька секунд. 
 
 ## Step 11
 За прикладом ми будуємо вольєр для оцелотів. Ця стінка не втримає їх, тож додамо повище огорожу.
@@ -135,7 +135,7 @@ player.onChat("ocelot_wall", function () {
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot_wall", function () {
-    builder.teleportTo(world(-40, 69, -575))
+    builder.teleportTo(world(-39, 69, -577))
     builder.face(WEST)
     builder.move(FORWARD, 21)
     builder.turn(RIGHT_TURN)
@@ -165,12 +165,12 @@ player.onChat("ocelot", function () {
 ```
 
 ## Step 16
-Зайдіть в розділ ``||Positions:POSITIONS||`` та перетягніть блок **абсолютних** координат ``||Positions:world [0] [0] [0]||``, щоб замінити **відносні** координати. Тепер маємо записати в них координату десь всередині вольєру. За прикладом можемо взяти **-50, 69, -580**. 
+Зайдіть в розділ ``||Positions:POSITIONS||`` та перетягніть блок **абсолютних** координат ``||Positions:world [0] [0] [0]||``, щоб замінити **відносні** координати. Тепер маємо записати в них координату десь всередині вольєру. За прикладом можемо взяти **-50, 69, -581**. 
 
 #### ~ tutorialhint
 ``` blocks
 player.onChat("ocelot", function () {
-    mobs.spawn(OCELOT, world(-50, 69, -580))
+    mobs.spawn(OCELOT, world(-50, 69, -581))
 })
 ```
 
