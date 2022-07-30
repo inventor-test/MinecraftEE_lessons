@@ -1,27 +1,27 @@
 ### @explicitHints 1
 
-# Lesson 2: Animate the Wind Farm 
+# Завдання 2: Зроби анімацію вітряка
 
-## Step 1
-Code three model blades. In Minecraft, ensure your player is at your wind farm, which should be near the following coordinates: **19, 79, -413**. If needed, use the slash command to teleport your player to the position by typing **/tp 19 79 -413** and selecting **Enter**.   
+## Крок 1
+Запрограмуйте три лопаті моделі. У Minecraft потрібно переконатись, що ваш вітряк побудований поруч із наступними координатами: **19, 79, -413**. Можна телепортуватись за цією координатою, ввівши команду **/tp 19 79 -413**.
 
-Find a space away from your wind farm to create secret models that will be used for the animations. For this activity you can do this high up in the sky or dig a chamber underground, or just make sure they're far enough away so they won't be seen.
+Знайдіть місце трохи далі від своєї електростанції, щоб створити приховані моделі лопатей, які будуть використовуватися для анімації. Можна збудувати їх високо в небі або викопати місце під землею, або просто збудувати їх трохи подалі, щоб їх не було видно (але не занадто далеко!).
 
-Create your first model of the turbine blades in one specific position of rotation. In our example below, we've made the blades in **Yellow Wool**, but you can make these from anything you wish. You must create these in the direction you want them to appear in final animation, so build them facing the way you want to see them when they finally appear at the end of this lesson. 
+Створіть першу модель лопатей в певному положенні обертання. Маємо створити їх у тому ж напрямку, як вони мають з’явитись в остаточній анімації, подумайте, як краще її збудувати.
 
-Remember when you use the ``||Blocks:clone||`` tool, the orientation of whatever you copy will always be the same. For example, if a building faces east, it is always going to face east. 
+Пам'ятайте, коли ви використовуєте блок ``||Blocks:clone||``, те що ви копіюєте, завжди буде скопійовано в тому ж напрямку.
 
-## Step 2
-Now create another next to this one, only design the blades to be in another state of rotation. Create the third and final variation of the blades in one more, a different state of rotation.   
+## Крок 2
+Тепер поруч із першою моделлю створіть лопаті в іншому положенні обертання. Потім створіть третій варіант лопатей ще в якомусь іншому положенні обертання.
 
-These three builds are three frames of what will be an animation. Like frames of a cartoon or a movie, when quickly played one after the other, they will create the illusion of movement.  
+Ці три (або більше) моделей - це три кадри вашої анімації. Як кадри мультфільму, вони створять ілюзію руху, копіюючись по черзі.
 
-Clone the model blades on your first turbine. The next phase is to code the model blades to move. We'll work on one model blade. Then, you'll be able to repeat the steps for the other two wind blades afterward. 
+Наступний крок - запрограмувати копіювання лопатей. Зробимо приклад для однієї моделі. Потім ви зможете повторити ці кроки для інших  лопатей.
 
-## Step 3
-Select a new ``||Player:on chat command||`` code block, then change the text to **wind_turbine**. 
+## Крок 3
+Витягніть блок ``||Player:on chat command||``, та замініть назву на **wind_turbine**. 
 
-Drag a ``||Loops:repeat [4] times||`` code block to your ``||Player:on chat command||`` block. For testing purposes, we will leave it set to **4**. 
+Перетягніть блок ``||Loops:repeat [4] times||`` всередину команди ``||Player:on chat command||``. Щоб протестувати програму, поки що залишимо кількість повторів **4**.
 #### ~ tutorialhint
 ``` blocks
 player.onChat("wind_turbine", function () {
@@ -31,8 +31,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 4
-Now visit the ``||Blocks:BLOCKS||`` drawer and select a ``||Blocks:clone from||`` block to your ``||Player:on chat command||`` block. 
+## Крок 4
+Тепер витягніть з розділу ``||Blocks:BLOCKS||`` блок ``||Blocks:clone from||`` та вставте його в ``||Player:on chat command||``. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -49,8 +49,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 5
-Replace all three of the **relative** coordinates oval with ``||Positions:world [0] [0] [0]||`` coordinates oval from the ``||Positions:POSITIONS||`` menu.  
+## Крок 5
+Замініть всі **три відносні** координати на абсолютні ``||Positions:world [0] [0] [0]||`` з розділу ``||Positions:POSITIONS||`` menu.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -67,33 +67,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 6
-Right click on the ``||Blocks:clone from||`` code block and select **Duplicate** to create another faded version, then drag it into your code block, under the first.   
-
-#### ~ tutorialhint
-``` blocks
-player.onChat("wind_turbine", function () {
-    for (let index = 0; index < 4; index++) {
-        blocks.clone(
-        world(0, 0, 0),
-        world(0, 0, 0),
-        world(0, 0, 0),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-        blocks.clone(
-        world(0, 0, 0),
-        world(0, 0, 0),
-        world(0, 0, 0),
-        CloneMask.Replace,
-        CloneMode.Normal
-        )
-    }
-})
-```
-
-## Step 7
-Create one more duplicate and place this below again, so you have three ``||Blocks:clone from||`` blocks in total. 
+## Крок 6
+Скопіюйте блок ``||Blocks:clone from||``, натиснувши праву кнопку миші (або потримавши палець з планшету), та вибравши пункт **Duplicate**, потім поставте новий блок під першим.   
 
 #### ~ tutorialhint
 ``` blocks
@@ -113,6 +88,31 @@ player.onChat("wind_turbine", function () {
         CloneMask.Replace,
         CloneMode.Normal
         )
+    }
+})
+```
+
+## Крок 7
+Скопіюйте ще раз блок ``||Blocks:clone from||``, та поставте під попереднім, щоб їх стало 3. 
+
+#### ~ tutorialhint
+``` blocks
+player.onChat("wind_turbine", function () {
+    for (let index = 0; index < 4; index++) {
+        blocks.clone(
+        world(0, 0, 0),
+        world(0, 0, 0),
+        world(0, 0, 0),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
+        blocks.clone(
+        world(0, 0, 0),
+        world(0, 0, 0),
+        world(0, 0, 0),
+        CloneMask.Replace,
+        CloneMode.Normal
+        )
         blocks.clone(
         world(0, 0, 0),
         world(0, 0, 0),
@@ -124,28 +124,29 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 8
-Return to your turbine blade models and note the coordinates you will need for cloning in your workbook. Set the coordinates to the top right and bottom left of each build to create an invisible cube that includes the entire blade. 
+## Крок 8
+Поверніться до своїх лопатей та визначте координати, які вам знадобляться для клонування. Потрібно знайти координати вгорі праворуч і внизу зліва для кожної лопаті, щоб утворився невидимий куб з лопаттю всередині.
 
-**Blade set 1** – From: **55 78 -291** To: **61 85 -291**
+За прикладом:
+**1 модель** – від: **55 78 -291** до: **61 85 -291**
 
-**Blade set 2** – From: **63 78 -291** To: **69 85 -291**
+**2 модель** – від: **63 78 -291** до: **69 85 -291**
 
-**Blade set 3** – From: **71 78 -291** To: **77 85 -291**
+**3 модель** – від: **71 78 -291** до: **77 85 -291**
 
-## Step 9
-Input the cloning coordinates. Return to MakeCode and carefully input the coordinates for the first, second and third set of blades into ``||Blocks:clone from||`` code blocks, in the ``||Blocks:from||`` and ``||Blocks:to||`` sections. Leave the ``||Blocks:into||`` set blank for now.  
+## Крок 9
+У Makecode введіть координати клонування для першої, другої та третьої лопаті у блоці ``||Blocks:clone from||``, в полях ``||Blocks:from||`` і ``||Blocks:to||``. Поле ``||Blocks:into||`` поки що залишимо пустим.  
 
-## Step 10
-Return to your wind turbine structure, created in **Lesson 1** of this unit.  
+## Крок 10
+Поверніться до свого вітряка, створеного у **1 завданні**.
 
-## Step 11
-From the top of your turbine pillar, build a tower of 20 blocks, of any kind of material. This is a test pillar to allow you to find your final coordinates. In our example, we have built one from **Yellow Wool**.  
+## Крок 11
+Починаючи з вершини вітряка, побудуйте вежу з будь-яких 20 блоків. Це буде тестовий стовп, щоб знайти остаточні координати.  
 
-Note the coordinate of the top most block of the tower in your workbook.  
+Зверніть увагу на координату найвищого побудованого блоку.
 
-## Step 12
-Then add this to the into coordinates of all three of your ``||Blocks:clone from||`` code blocks. 
+## Крок 12
+Тепер додайте цю координату в поле ``||Blocks:into||`` для усіх трьох блоків  ``||Blocks:clone from||``. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -175,29 +176,24 @@ player.onChat("wind_turbine", function () {
     }
 })
 ```
-## Step 13
-Test the cloning coordinates. Run a small test before you commit to placing your animation permanently. This part is about finding where the blades clone in when you run the command. This is likely to differ for everyone depending on the direction you placed them, the size of them, etc.  
+## Крок 13
+Протестуємо програму, перш ніж запустити постійну анімацію. Потрібно зрозуміти місце, в яке лопаті копіюються, коли ви запускаєте команду. Зараз скоріш за все кінцева точка буде не там, де потрібно.
 
-Using the center of your blades, work your way down and to the center again. In our example, we have marked this with **Orange Wool**. Write this information in your workbook. 
+Опускаючи побудовану вежу, потроху змінюйте кінцеву координату та перевіряйте програму.
 
-The bottom, horizontal part of this tells us that the center of our blade animation was three blocks too far to the right so that we can compensate for that later. 
+Ваші лопаті можуть копіюватись лівіше, правіше, або спереду чи позаду, щоб виправити це потрібно змінювати **першу** або **третю** кінцеву координату, в блоці ``||Blocks:into||``.
 
-Now do the same for the height, from the top of your pillar to the center of the blade animation and note it in your workbook. Again, we have marked this in **Orange Wool** and on the left this time.  
+Якщо ж центр занадто високо,можемо компенсувати це, змінивши **другу** кінцеву координату.
 
-This top, vertical part tells us that the center was four blocks too high. We can compensate for both now. 
+Добийтесь того, щоб ваші лопаті копіювались точно по центру вітряка.
 
-Using another material, measure from your turbine's actual center point, and compensate for the direction and numbers.  
+## Крок 14
+Коли ви знайшли правильну координату, запишіть її усіх блоках ``||Blocks:into||``.  
 
-## Step 14
-We have found our new and accurate center coordinates for our animation. Stand on this final block to get the coordinates. Note these in your workbook and add them to your code in the ``||Blocks:into||`` set of coordinates.  
+## Крок 15
+Тепер запустіть свій код, щоб побачити, чи правильно копіюються всі моделі лопатей. Зробіть виправлення за потреби.
 
-## Step 15
-Now run your code to see if you have an accurate and working wind blade at the top of your turbine pillar. If you don't have an accurate and working wind turbine, make other adjustments as needed. Use the space in your workbook as needed for notes. 
+## Крок 16
+Коли все копіюється правильно, приберіть всі зайві блоки (окрім самих лопатей!)
 
-## Step 16
-When it's cloned correctly, remove the test blocks that you added to determine how much the test clone was off. In the example, it would be removing the **Yellow, Orange, **and **Red Wool** blocks. 
-
-Don't remove your model blades! They must stay there so you can clone them on your other turbines. 
-
-Animate the other turbines in your farm. Now that you finished the first one, you're ready to animate other turbines. Remember, you can use the same model coordinates and just change the ``||Blocks:into||`` coordinates input for each new turbine. 
- 
+(Додатково) Зробіть анімацію для інших вітряків на вашій фермі. Пам'ятайте, ви можете використовувати ті самі координати моделі та просто змінювати координаті в блоках ``||Blocks:into||``. 
