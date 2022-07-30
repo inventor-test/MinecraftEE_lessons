@@ -1,9 +1,9 @@
-# Lesson 3: Code a Lighting System  
+# Lesson 3: Запрограмуй систему освітлення  
 
-## Step 1
-Code a wind indicator. The first thing we need to do is to create the illusion that the blades of the turbines are not always turning. Like there is not always enough wind to do this, as is the case in real life.   
+## Крок 1
+Давайте запрограмуємо вироблення електрики вітряком. Перше, що нам потрібно зробити - це створити ілюзію, що лопаті не завжди повертаються. Як і в реальному житті, вітер іноді може зникати.
 
-Use the starter code and change the value for the ``||loops:repeat||`` element from **4** to **10**. 
+Використовуйте готовий код і змініть значення для блоку ``||loops:repeat||`` з **4** на **10**. Якщо ви використовували свої координати лопатей, потрібно також замінити їх у всіх блоках ``||Blocks:clone||``.
 
 ``` template
 player.onChat("wind_turbine", function () {
@@ -33,8 +33,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 2
-Code to generate power. Drag a ``||Blocks:place [block] at||`` code block and slot it into the first part of your code, above your ``||Loops:repeat [10] times||`` block.
+## Крок 2
+Запрограмуємо генерацію енергії. Перетягніть блок ``||Blocks:place [block] at||`` та вставте його **на початок** вашої програми, над блоком ``||Loops:repeat [10] times||``.
 
 #### ~ tutorialhint
 ``` blocks
@@ -66,8 +66,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 3
-Use the drop-down menu to change the **Grass Block** element to **Block of Redstone**. Remember, **Block of Redstone** is the input block we explored earlier in our inventory.  
+## Крок 3
+Змініть **блок трави** на **Блок редстоуну (Block of Redstone)**.
 
 #### ~ tutorialhint
 ``` blocks
@@ -99,8 +99,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 4
-Replace the **relative** coordinates oval with the ``||Positions:world [0] [0] [0]||`` coordinates oval from the ``||Positions:POSITIONS||`` toolbox drawer.  
+## Крок 4
+Змініть **відносні** координати на **абсолютні** ``||Positions:world [0] [0] [0]||`` з розділу ``||Positions:POSITIONS||``.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -132,11 +132,11 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 5
-Return to your game and stand on the first block in the trench you dug for your **Redstone**. Take note of the coordinates of this block in your workbook. In our example, this is **8 81 -412**, though yours will be unique to your own build.  
+## Крок 5
+Поверніться до гри і встаньте на перший блок у траншеї, яку ви викопали для свого редстоуну. Подивіться на координати в цьому місці. У прикладі це **8 81 -412**, хоча у вас може бути інша.  
 
-## Step 6
-In MakeCode, insert these new coordinates into your ``||Blocks:place [Block of Redstone]||`` set.  
+## Крок 6
+Впишіть цю координату в блок ``||Blocks:place [Block of Redstone]||``.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -168,10 +168,10 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 7
-Right-click on your completed ``||Blocks:place [Block of Redstone]||`` code block and select **Duplicate**.  
+## Крок 7
+Скопіюйте блок ``||Blocks:place [Block of Redstone]||``, натиснувши праву кнопку миші (або потримавши палець з планшету) та вибравши пункт **Duplicate**.  
 
-Drag the duplicated, faded version of this code block to the bottom of your main code and place it after your third ``||Blocks:clone from||`` code block and crucially, outside the ``||Loops:LOOP||``.  
+Вставте скопійований блок в самому низу, під циклом ``||Loops:repeat||``.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -204,8 +204,8 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 8
-Use the drop-down menu to change the **Block of Redstone** element to **air**.Complete code so far. Your complete code so far should look like this, but with your own coordinates
+## Крок 8
+У випадаючому меню змініть **Блок редстоуну** на **повітря (air)**. Готовий код має виглядати як в прикладі, але з вашими координатами.
 
 #### ~ tutorialhint
 ``` blocks
@@ -238,16 +238,16 @@ player.onChat("wind_turbine", function () {
 })
 ```
 
-## Step 9
-Test your code. If successful, your **Redstone Lamp** will light up whenever you run your **wind_turbine** command.  
+## Крок 9
+Перевірте код! Якщо все правильно, встановлена раніше **Редстоун лампа** має засвітитись, коли ви запустите команду **wind_turbine**.  
 
-## Step 10
-Get the ``||Loops:forever||`` code block.  
+## Крок 10
+Витягніть блок ``||Loops:forever||``.  
 
-This code block creates a loop then runs eternally. This is useful for global constants, like weather conditions or in this case, wind. 
+Цей блок - цикл, який повторюється вічно. Так можна зробити погодні умови, або в цьому випадку, вітер.
 
-## Step 11
-Drag this to the coding Workspace, then click and hold your left mouse button on your ``||Blocks:place [Block of Redstone]||`` code block. Dragging your mouse while holding the left button will drag this code block and all those attached below and attach them into your new ``||Loops:forever||`` block.  
+## Крок 11
+Тепер перетягніть **всю попередню програму** до блоку ``||Loops:forever||``. Потягніть за перший блок в програмі, ``||Blocks:place [Block of Redstone]||`` та перетягніть все до нового блоку.  
 
 #### ~ tutorialhint
 ``` blocks
@@ -283,8 +283,8 @@ loops.forever(function () {
 })
 ```   
 
-## Step 12
-Change the number in this ``||Loops:repeat [10] times||`` to **20**. 
+## Крок 12
+Змініть кількість повторів в циклі ``||Loops:repeat [10] times||`` на **20**. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -321,13 +321,13 @@ loops.forever(function () {
 })
 ```  
 
-## Step 13
-Mimic wind variation. Finally, we need to add something that means a period of no wind activity. So far, we have the turbines turning endlessly and the power going on and off very quickly. A well-placed pause in this code will give us that effect. 
+## Крок 13
+Наостанок, нам потрібно якось зробити імітацію відсутності вітру. Поки що вітряк постійно обертається, і електроенергія не зникає. Правильно розміщена пауза в коді дасть нам цей ефект.
 
-## Step 14
-Return to the ``||Loops:LOOPS||`` menu and select the ``||Loops:pause (ms)||`` code block. Drag it to your code and place it immediately after your final ``||Blocks:place [Air]||`` block. Then set the number to **5000**.  
+## Крок 14
+Поверніться до розділу ``||Loops:LOOPS||`` та перетягніть блок ``||Loops:pause (ms)||``. Поставте його одразу після останнього блоку ``||Blocks:place [Air]||``. Змініть значення на **5000**.  
 
-As a guide, 1000ms is one second of in-game time. So, setting this to 5000ms will give us a pause in our animation of 5 seconds. Simulating a loss of wind power for 5 seconds. 
+Для прикладу, 1000 мс - це одна секунда в грі. Отже, 5000 мс означатиме паузу в 5 секунд. На 5 секунд вітер буде "закінчуватися" і енергія зникатиме. 
 
 #### ~ tutorialhint
 ``` blocks
@@ -363,5 +363,5 @@ loops.forever(function () {
     loops.pause(5000)
 })
 ```
-## Step 15
-Run your code. Test your code. Your blades should now be turning 20 times, before stopping for 5 seconds and doing this on an endless loop. Your **Redstone Lamp** should light up only when the blades are turning. If it doesn't work, go back to review your code and make adjustments as needed. Then you can repeat the steps for your other turbines.
+## Крок 15
+Перевіримо програму! Наш вітряк має обернутись 20 разів, а потім зупинитися на 5 секунд, і це все буде повторюватись нескінченно. Ваша редстоун лампа має світитись лише тоді, коли лопаті обертаються. Якщо щось не буде працювати, перегляньте свій код і внесіть необхідні корективи за потреби. Потім можете повторити кроки для інших турбін.
