@@ -1,20 +1,21 @@
 
 
-# Lesson 1: Code a Wind Farm
+# Завдання 1: Запрограмуй вітряк
 
-## Step 1
-Wind turbines make up a wind farm. A ***wind turbine*** is like a windmill, where blades rotate when the wind hits them. In real life as the blades turn, the energy is converted to produce power. Before we start building our wind farm, let's consider a good position for one. In our example, we'll use the hill near our city. Let's use one of the methods we've learned to code a turbine, then clone it to make a farm.  
+## Крок 1
+Перш ніж ми почнемо будувати вітроелектростанцію, давайте виберемо для нього гарне місце. За прикладом ми будемо використовувати пагорб біля міста. Щоб запрограмувати турбіну, потрібно використати один із методів, яких ми навчились. Маємо створити одну турбіну, а потім зклонувати її, щоб зробити ферму.
+
 ```template
 player.onChat("run", function(){
 })
 player.teleport(pos(19, 79, -413))
 ```
 
-## Step 2
-Test yourself. You should be familiar with the two main coding build methods, ``||Agent:AGENT||`` and ``||Builder:BUILDER||``, now that we have reached the last unit. Decide how you would like to build your turbine using one of these methods. There is an example in the world for you to see just up the hill. 
+## Крок 2
+Перевірте себе. Ви маєте бути знайомі з двома основними методами програмної побудови, ``||Agent:AGENT||`` та ``||Builder:BUILDER||``, Подумайте, як можна використати якийсь з цих методів, щоб збудувати вітряк.
 
-## Step 3
-Use the ``||Blocks:clone||`` command from the ``||Blocks:BLOCKS||`` toolbox drawer to make more of these, if you wish.   
+## Крок 3
+Коли вітряк побудований, використайте блок ``||Blocks:clone||`` з розділу ``||Blocks:BLOCKS||``, щоб зробити копії та збудувати цілу ферму, якщо хочете.   
 
 
 ```ghost
