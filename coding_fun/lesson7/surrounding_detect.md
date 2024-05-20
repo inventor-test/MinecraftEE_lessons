@@ -14,7 +14,9 @@
 ```template
 player.onChat("inspect", function () {
     while (agent.inspect(AgentInspection.Block, DOWN) == STONE) {
-        
+        if (!(agent.detect(AgentDetection.Block, FORWARD))) {
+        } else {
+        }
     }
 })
 ```
